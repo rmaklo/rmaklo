@@ -1,0 +1,124 @@
+/*Body*/
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    color: #2c2c2c;
+    background-color: #e3e3e3;
+}
+h1, h2, h3{
+    font-family: "Playfair Display";
+    font-optical-sizing: auto;
+}
+h4{
+    font-family: "Inter";
+    font-optical-sizing: auto;
+}
+.bouton{
+    font-family: "Playfair Display";
+}
+
+/*Navigation*/
+nav img{
+    width: 120px;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+}
+#menu{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding:0;
+    gap: 64px;
+}
+#menu a{
+    font-weight: light;
+    text-decoration: none;
+    color: #2c2c2c;
+    transition: all .3s ease-in-out;
+}
+#menu a:hover{
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 48px;
+    padding-right: 48px;
+    /*background: white;*/
+}
+
+/*Header*/
+header{
+    display: flex;
+    height: 58vh;
+    padding: 48px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#about p{
+    font-size: 24px;
+    margin: 0;
+    line-height: 32px;
+    padding-right: 48px;
+}
+#about-img img{
+    width: 100%;
+}
+#about h3{
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#about h1{
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#about p{
+    font-size: 16px;
+}
+.bouton.primaire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 16px 64px;
+    width: fit-content;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    background: #2c2c2c;
+    color: white;
+}
+.bouton.primaire:hover{
+    background: #3b3b3b;
+}
+
+/*Compétences*/
+#compétences .cards-container{
+    display: flex;
+}
+.cards{
+    display: flex;
+    background: green;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+ }
+ .cards img{
+    width: 25%;
+    /*height: 100px;*/
+    object-fit: cover;
+ }
