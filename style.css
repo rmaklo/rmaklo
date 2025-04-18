@@ -1,4 +1,8 @@
 /*Body*/
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -136,7 +140,6 @@ header{
     justify-content: center;
     gap: 48px;
     background: white;
-    padding-top: 48px;
     padding-bottom: 48px;
 }
 #competences .cards-container{
