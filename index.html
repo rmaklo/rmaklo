@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rmaklo</title>
     <link rel="stylesheet" href="style.css">
-
-    <!--Playfair Display-->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
-    <!--Inter-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
     <!--barre de navigation-->
     <nav>
         <a href="#">
-            <img src="rmaklo_logo.png" alt="Logo r.maklo">
+            <img src="assets\icons\rmaklo_logo.png" alt="Logo r.maklo">
         </a>
         <ul id="menu">
-            <li><a href="">À propos</a></li>
-            <li><a href="">Réalisations</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#header">À propos</a></li>
+            <li><a href="#realisations">Portfolio</a></li>
+            <li><a href="#avis">Contact</a></li>
         </ul>
     </nav>
 
@@ -31,147 +27,208 @@
         <div id="about">
             <h3>Rayan Makhloufi</h3>
             <h1>Graphiste</h1>
-            <p>Graphiste débutant actuellement en formation en developpement web à l'emlyon Business School latoile, mon objectif à termes sera de vous aidez à developper et réaliser vos envies créatives, grâce à mes softskills et hardskills.</p>
-            <a class="bouton primaire" href="#">Me contacter</a>
+            <p>Graphiste débutant actuellement en formation en developpement web à l'emlyon Business School / latoile, mon objectif à terme sera de vous aider à developper et réaliser vos envies créatives, grâce à mes softskills et hardskills.</p>
+            <div class="bouton-container">
+                <a class="bouton primaire" href="mailto:rayan.makhloufi94@gmail.com" target="_blank">Me contacter</a>
+                <a class="bouton secondaire" target="_blank">Télécharger mon CV</a>
+            </div>
         </div>
         <div id="about-img">
             <img src="image-menu.png" alt="Photo d'illustration">
         </div>
     </header>
-    <main>
 
+    <!--corps-->
+    <main>
         <!--section compétences-->
-        <section id="compétences">
+        <section id="competences">
             <div class="cards-container">
                 <article class="cards">
-                    <!--img : ajouter un span ?-->
-                    <img src="gimp-logo.png" alt="Logo de Gimp">
+                    <div class="image-container">
+                        <img src="assets\icons\gimp-bleu.png" alt="Logo de Gimp">
+                    </div>
                     <div class="txt-competences">
-                        <h2>Maitrise du logiciel GIMP</h2>
+                        <h2>GIMP</h2>
                         <p>Réalisation de projets graphique sur GIMP, logiciel que j'appréhende depuis 6 ans maintenant.</p>
                     </div>
                 </article>
                 <article class="cards">
-                    <!--img : ajouter un span ?-->
-                    <img src="gimp-logo.png" alt="Logo de Gimp">
+                    <div class="image-container">
+                        <img src="assets\icons\htmlcss-bleu.png" alt="Logo HTML CSS 5">
+                    </div>
                     <div class="txt-competences">
-                        <h2>Texte numéro 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium incidunt repellat magnam debitis eveniet cum ratione.</p>
+                        <h2>HTML et CSS 5</h2>
+                        <p>En cours d'apptentissage, je réaliserai à l'avenir vos projets web en HTML et en CSS 5.</p>
                     </div>
                 </article>
                 <article class="cards">
-                    <!--img : ajouter un span ?-->
-                    <img src="gimp-logo.png" alt="Logo de Gimp">
+                    <div class="image-container">
+                        <img src="assets\icons\figma-bleu.png" alt="Logo de Figma">
+                    </div>
                     <div class="txt-competences">
-                        <h2>Texte numéro 3</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium incidunt repellat magnam debitis eveniet cum ratione.</p>
+                        <h2>Figma</h2>
+                        <p>En cours d'apptentissage, je réaliserai prochainement vos maquettes sur Figma.</p>
                     </div>
                 </article>
             </div>
         </section>
 
         <!--section réalisations-->
-        <section id="réalisations">
-            <h2>Mes dernières réalisations</h2>
-            <div class="cards-img-container">
-                <article class="cards">
-                    <a href="#">
-                        <img src="image-menu.png" alt="Image">
-                        <div class="txt-realisations">
-                            <h3>Conception web</h3>
-                            <h4>Dev Web</h4>
-                        </div>
-                    </a>
-                </article>
-                <article class="cards">
-                    <a href="#">
-                        <img src="image-menu.png" alt="Image">
-                        <div class="txt-realisations">
-                            <h3>studio 1601</h3>
-                            <h4>Graphic design</h4>
-                        </div>
-                    </a>
-                </article>
-                <article class="cards">
-                    <a href="#">
-                        <img src="image-menu.png" alt="Image">
-                        <div class="txt-realisations">
-                            <h3>Geostory</h3>
-                            <h4>Graphic design</h4>
-                        </div>
-                    </a>
-                </article>
+        <section id="realisations">
+            <div data-aos="fade-up" data-aos-duration="750">
+                <h2>Mes dernières réalisations</h2>
+            </div>
+            <div class="cards-container">
+                <div data-aos="flip-left">
+                    <article class="cards">
+                        <a href="#">
+                            <img src="assets\images\1601 - Logo.png" alt="Image">
+                            <div class="txt-realisations">
+                                <h3>Studio 1601</h3>
+                                <p>Graphic design</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="750">
+                    <article class="cards">
+                        <a href="#">
+                            <img src="assets\images\GS 25 - Logo.png" alt="Image">
+                            <div class="txt-realisations">
+                                <h3>Geostory 2025</h3>
+                                <p>Graphic design</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="750">
+                    <article class="cards">
+                        <a href="#">
+                            <img src="assets\images\Geostory (1).png" alt="Image">
+                            <div class="txt-realisations">
+                                <h3>Geostory 2023</h3>
+                                <p>Graphic design</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="750">
+                    <article class="cards">
+                        <a href="https://rmaklo.github.io/shop/" target="_blank">
+                            <img src="assets\images\koolkicks.png" alt="Image">
+                            <div class="txt-realisations">
+                                <h3>Koolkics</h3>
+                                <p>Dev Web - Exercice d'entrainement</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="750">
+                    <article class="cards">
+                        <a href="https://rmaklo.github.io/album/"  target="_blank">
+                            <img src="assets\images\agartha.jpg" alt="Image">
+                            <div class="txt-realisations">
+                                <h3>Exercice web - album</h3>
+                                <p>Dev web</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="750">
+                    <article class="cards">
+                        <a href="#">
+                            <img src="assets\images\TV.png" alt="Image">
+                            <div class="txt-realisations">
+                                <h3>La Qautrième / La Cinquième</h3>
+                                <p>Logo - Maquette</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
             </div>
         </section>
 
         <!--section témoignages-->
         <section id="avis">
-            <h2>Témoignages</h2>
-            <div class="cards-container">
-                <article class="cards">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quisquam tempore omnis aliquid ex odio repellendus.</p>
-                    <div>
-                        <div><img src="assets\images\drawing.png" alt="Photo profil"></div>
-                        <div>
-                            <p id="étoiles">&#9733 &#9733 &#9733 &#9733 &#9733</p>
-                            <h3>Prénom Nom</h3>
-                            <h4>Job / entreprise</h4>
+            <div data-aos="fade-up" data-aos-duration="750">
+                <h2>C'est eux qui en parlent le mieux...</h2>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="750">
+                <div class="cards-container">
+                    <article class="cards">
+                        <p id="quote">"Le design est propre et moderne, et tout est bien structuré, tout ce que je recherchais. Je recommande !"</p>
+                        <div class="content">
+                            <div id="pic"><img src="assets\images\photo-random.png" alt="Photo profil"></div>
+                            <div id="txt">
+                                <h3>Ilias Assadki</h3>
+                                <h4>Studio 1601</h4>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="cards">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quisquam tempore omnis aliquid ex odio repellendus.</p>
-                    <div>
-                        <div><img src="assets\images\drawing.png" alt="Photo profil"></div>
-                        <div>
-                            <p id="étoiles">&#9733 &#9733 &#9733 &#9733 &#9733</p>
-                            <h3>Prénom Nom</h3>
-                            <h4>Job / entreprise</h4>
+                    </article>
+                    <article class="cards">
+                        <p id="quote">"Chaque affiche, chaque miniature de podcast, sans oublier le logo, reflète une vraie sensibilité graphique et un grand sens du détail !"</p>
+                        <div class="content">
+                            <div id="pic"><img src="assets\images\photo-random.png" alt="Photo profil"></div>
+                            <div id="txt">
+                                <h3>Ihab Boukerroucha</h3>
+                                <h4>Geostory</h4>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="cards">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quisquam tempore omnis aliquid ex odio repellendus.</p>
-                    <div>
-                        <div><img src="assets\images\drawing.png" alt="Photo profil"></div>
-                        <div>
-                            <p id="étoiles">&#9733 &#9733 &#9733 &#9733 &#9733</p>
-                            <h3>Prénom Nom</h3>
-                            <h4>Job / entreprise</h4>
+                    </article>
+                    <article class="cards">
+                        <p id="quote">"Super créatif, toujours à l'écoute, avec un vrai sens du détail. Ses logos sont percutants et ses sites web sont à la fois modernes et intuitifs. Un vrai plaisir de collaborer avec lui !"</p>
+                        <div class="content">
+                            <div id="pic"><img src="assets\images\photo-random.png" alt="Photo profil"></div>
+                            <div id="txt">
+                                <h3>Stéphane Devarlys</h3>
+                                <h4>Tonton (aka ChatGPT)</h4>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
 
     <!--section footer-->
     <footer>
-        <div id="pied-page">
-            <h2>Travaillons ensemble !</h2>
-            <p>Vous avez des rêves ? Faites-les exaucés par un designer graphisque !
+        <div id="txt-footer">
+            <h2>Alors, prêt a collaborer ?</h2>
+            <p id="footer">Vous avez des rêves ?<br>Faites-les exaucés par un designer graphique !
             </p>
             <ul id="reseaux">
                 <li>
-                    <a href="https://www.linkedin.com/in/rmakhloufi/">
+                    <a href="https://www.linkedin.com/in/rmakhloufi/" target="_blank">
                         <img src="assets\icons\linkedin.png" alt="Logo LinkedIn">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/r.deuxsix?igsh=aWxlYzgxZTgzN3R0&utm_source=qr">
+                    <a href="https://www.instagram.com/r.deuxsix?igsh=aWxlYzgxZTgzN3R0&utm_source=qr" target="_blank">
                         <img src="assets\icons\instagram.png" alt="Logo Instagram">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.behance.net/">
+                    <a href="https://www.behance.net/" target="_blank">
                         <img src="assets\icons\behance.png" alt="Logo Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/rmaklo" target="_blank">
+                        <img src="assets\icons\github.png" alt="Logo Github">
                     </a>
                 </li>
             </ul>
         </div>
-        <div>
-            <a class="bouton primaire" href="#">Me Contacter</a>
+        <div class="bouton-container">
+            <a class="bouton primaire" href="mailto:rayan.makhloufi94@gmail.com" target="_blank">Me contacter</a>
+            <a class="bouton secondaire" target="_blank">Télécharger mon CV</a>
         </div>
     </footer>
+
+    <!--animations-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
