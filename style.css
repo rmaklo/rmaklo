@@ -11,7 +11,6 @@ body{
     color: black;
     padding-right: 48px;
     padding-left: 48px;
-    padding-bottom: 48px;
     /*background-color: #dfe7ff;*/
 }
 
@@ -97,7 +96,6 @@ nav{
     justify-content: space-between;
     padding-top: 12px;
     padding-bottom: 12px;
-    background: white;
 }
 
 /*Header*/
@@ -112,12 +110,18 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 50%;
 }
 #about p{
     font-size: 16px;
     margin: 0;
     line-height: 32px;
     padding-right: 48px;
+}
+#about-img{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
 }
 #about-img img{
     width: 100%;
@@ -247,7 +251,7 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 16px;
+    padding: 48px;
     height: 200px;
     border-radius: 16px;
 }
@@ -294,24 +298,24 @@ header{
     margin: 0;
 }
 
-/*Footer*/
-footer{
+/*Section bannière contact*/
+#banner{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background: #dfe7ff;
     border-radius: 16px;
-    padding: 24px 48px;
+    padding: 48px;
     gap: 25%;
 }
-#txt-footer h2, #reseaux{
+#txt-banner h2, #reseaux{
     display: flex;
     flex-direction: column;
     margin: 0;
 }
-#txt-footeur p{
-    margin-top: 8px;
-    margin-bottom: 8px;
+#txt-banner p{
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 #reseaux{
     display: flex;
@@ -321,13 +325,30 @@ footer{
     padding: 0;
     gap: 24px;
 }
-#txt-footer{
+#txt-banner{
     display:flex;
     flex-direction: column;
 }
 #reseaux img{
     width: 35px;
     height: 100%;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 4px;
+}
+footer img{
+    width: 120px;
+}
+footer a{
+    display: flex;
+    align-items: center;
+    object-fit: contain;
 }
 
 /* Responsive
