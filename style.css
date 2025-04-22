@@ -11,7 +11,7 @@ body{
     color: black;
     padding-right: 48px;
     padding-left: 48px;
-    /*background-color: #dfe7ff;*/
+    cursor: url("assets/icons/curseur-noir.png"), pointer;
 }
 
 /*Elements multiples*/
@@ -25,6 +25,7 @@ body{
     font-weight: 500;
     transition: all .2s ease-in-out;
     border-radius: 40px;
+    cursor: url("assets/icons/curseur-bleu.png"), pointer;
 }
 .bouton.primaire{
     background: #0040ff;
@@ -56,10 +57,8 @@ body{
 }
 .cards{
     display: flex;
-    /*background: green;*/
     flex-direction: column;
     align-items: center;
-    /*transition: all 1s ease-in-out;*/
 }
 
 /*Navigation*/
@@ -74,6 +73,7 @@ nav a{
     display: flex;
     align-items: center;
     object-fit: contain;
+    cursor: url("assets/icons/curseur-bleu.png"), pointer;
 }
 #menu{
     display: flex;
@@ -102,7 +102,6 @@ nav{
 header{
     display: flex;
     padding: 48px;
-    /*background: #dfe7ff;*/
     background: linear-gradient(#dfe7ff ,white);
     border-radius: 16px;
 }
@@ -161,7 +160,6 @@ header{
     align-items: center;
     width: 176px;
     height: 176px;
-    /*background: #809fff;*/
 }
 .txt-competences h2{
     display: flex;
@@ -202,9 +200,9 @@ header{
 #realisations .cards a{
     display:flex;
     flex-direction: column;
-    /*font-weight: light;*/
     text-decoration: none;
     color: black;
+    cursor: url("assets/icons/curseur-bleu.png"), pointer;
 }
 #realisations .txt-realisations{
     padding-top: 24px;
@@ -332,6 +330,7 @@ header{
 #reseaux img{
     width: 35px;
     height: 100%;
+    cursor: url("assets/icons/curseur-bleu.png"), pointer;
 }
 
 /*Footer*/
@@ -349,6 +348,7 @@ footer a{
     display: flex;
     align-items: center;
     object-fit: contain;
+    cursor: url("assets/icons/curseur-bleu.png"), pointer;
 }
 
 /* Responsive
